@@ -1,18 +1,21 @@
 body {
     padding: 0px;
-} 
+}
+
+
 /* topvar */
+
 ul {
     list-style: none;
 }
-.container{
+
+.container {
     width: 100%;
     height: auto;
     padding: 0px;
     margin: auto;
-    
-    
 }
+
 .nav-main {
     font-size: 17px;
     font-family: sans-serif;
@@ -20,103 +23,108 @@ ul {
     padding: 0px;
     height: 50px;
     background-color: black;
-   
 }
+
 .nav-icon {
     width: 48px;
     height: auto;
-
 }
+
 .nav-main ul {
     display: flex;
 }
-.nav-main ul li{
+
+.nav-main ul li {
     padding: 0px;
 }
-a{
+
+a {
     color: white;
 }
-.nav-menu{
+
+.nav-menu {
     padding: 5px;
     margin-top: 10px;
-  
 }
-.nav-menu-right a{
-   color: #3d3e3f;
-   font-size: 12px;
-   margin-right: 0px;
-  
+
+.nav-menu-right a {
+    color: #3d3e3f;
+    font-size: 12px;
+    margin-right: 0px;
 }
+
 @media all and (max-width: 600px) {
     .nav-menu-right a {
         display: none;
-        
     }
 }
-.nav-menu-right{
+
+.nav-menu-right {
     margin-top: auto;
     padding: 0px;
-   
 }
-.nav-main ul.nav-menu{
+
+.nav-main ul.nav-menu {
     flex: 1;
     margin-left: 0px;
-    
 }
+
+
 /* slider*/
+
 .slider-container {
     width: 100%;
     height: 200px;
-    background: url('./img/fondo-slider.png') no-repeat center center/cover;
+    background: url('../img/fondo-slider.png') no-repeat center center/cover;
     padding: 70px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     font-family: sans-serif;
-
 }
-.slider-container p{
+
+.slider-container p {
     color: gray;
     margin: 0px;
     text-align: left;
     font-size: 22px;
-    
-    
-
 }
-.slider-container h2{
+
+.slider-container h2 {
     color: gray;
     font-weight: bold;
     font-size: 70px;
     margin-top: 0px;
     text-align: left;
 }
-.btn { 
+
+.btn {
     /* cursor: pointer; */
     border-radius: 5px;
     padding: 10px 20px;
-    background: rgb(41,151,226);
+    background: rgb(41, 151, 226);
     font-size: 12px;
-    color:white;
+    color: white;
     border: 1px currentColor white;
     margin: 0px;
     text-decoration: none;
-    
-  
 }
+
 .sprite {
     display: flex;
-    background-image: url('./img/ON9NZH0.jpg');
+    background-image: url('../img/ON9NZH0.jpg');
     background-repeat: no-repeat;
     background-size: 200px 200px;
     /* height: 200px;
     width: 200px; */
-  
 }
+
 .slider-inter {
     display: flex;
 }
+
+
 /* .slick-slider {
     width: 100%;
     height:500px;
@@ -143,17 +151,25 @@ a{
             display: none;
             
         } */
-        .slick-prev:before, .slick-next:before{
-            color:red;
-        }
-        /* cards */
+
+.slick-prev:before,
+.slick-next:before {
+    color: red;
+}
+
+
+/* cards */
+
 .titulo-articulos {
     font-family: sans-serif;
     font-size: 22px;
     margin-left: 10px;
     margin-bottom: 1px;
 }
+
+
 /* --- */
+
 .row {
     column-count: 4;
     gap: 10px;
@@ -161,15 +177,16 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.row > div:nth-child(1) {
+.row>div:nth-child(1) {
     margin-top: -20px;
 }
 
-.row > div:nth-child(5) {
+.row>div:nth-child(5) {
     margin-top: -30px;
 }
-.row > div:nth-child(6) {
- padding-bottom: 0px;
+
+.row>div:nth-child(6) {
+    padding-bottom: 0px;
 }
 
 .card {
@@ -180,19 +197,19 @@ a{
     font-family: sans-serif;
     flex-direction: column;
     margin-top: 10px;
-    
 }
-.card-header {
-    display:flex;
-    background: url('./img/fondo-card.png') no-repeat center center/cover;
-    padding: 40px;
 
+.card-header {
+    display: flex;
+    background: url('../img/fondo-card.png') no-repeat center center/cover;
+    padding: 40px;
 }
 
 .card-title {
     font-size: 17px;
     margin: 10px;
 }
+
 .card-body {
     font-size: 12px;
     margin: 0px 10px 10px 10px;
@@ -200,6 +217,7 @@ a{
 
 
 /* formulario */
+
 .titulo-form {
     display: flex;
     font-family: sans-serif;
@@ -207,4 +225,28 @@ a{
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 45%;
+    margin: 3px;
+}
+
+.col-full {
+    width: 95%;
+}
+
+.input {
+    width: 100%;
+    padding: 3px;
+    margin: 3px;
+}
+
+.error {
+    display: none;
 }
