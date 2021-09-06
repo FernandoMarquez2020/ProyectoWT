@@ -74,7 +74,7 @@ a {
 
 .slider-container {
     width: 100%;
-    height: 200px;
+    height: 150px;
     background: url('../img/fondo-slider.png') no-repeat center center/cover;
     padding: 70px;
     margin-bottom: 20px;
@@ -113,48 +113,28 @@ a {
 
 .sprite {
     display: flex;
-    background-image: url('../img/ON9NZH0.jpg');
+    background-image: url('../img/ON9NZH1.png');
     background-repeat: no-repeat;
-    background-size: 200px 200px;
+    background-size: 1147px;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    width: 500px;
+    height: 500px;
+    background-position: -216px -92px;
+    transform: rotate(-50deg);
+    filter:saturate(0);
+
     /* height: 200px;
     width: 200px; */
 }
 
-.slider-inter {
-    display: flex;
-}
 
 
-/* .slick-slider {
-    width: 100%;
-    height:500px;
-    background: url('./img/slider-none.png') no-repeat center center/cover;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
-    display: flex;
-}  
-@media all and (max-width: 600px) {
-    .slick-slider {
-        display: none;
-        
-    }
-    .slick-slider {
-        width: 100%;
-        height:500px;
-        background: url('./img/slider-none2.png') no-repeat center center/cover;
-        padding-bottom: 50px;
-        margin-bottom: 20px;
-        display: block;
-    }  
-    @media all and (min-width: 600px) {
-        .slick-slider {
-            display: none;
-            
-        } */
 
 .slick-prev:before,
 .slick-next:before {
-    color: red;
+    color: rgb(7, 4, 4);
 }
 
 
@@ -185,9 +165,9 @@ a {
     margin-top: -30px;
 }
 
-.row>div:nth-child(6) {
+/* .row>div:nth-child(6) {
     padding-bottom: 0px;
-}
+} */
 
 .card {
     display: flex;
@@ -228,12 +208,11 @@ a {
 }
 
 .form {
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .col-6 {
-    width: 45%;
+    width: calc(50% - 5px);
     margin: 3px;
 }
 
@@ -243,10 +222,13 @@ a {
 
 .input {
     width: 100%;
-    padding: 3px;
-    margin: 3px;
+    padding: 10px;
+    
 }
 
 .error {
     display: none;
 }
+input:placeholder-shown {
+    display: block;
+  }

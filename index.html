@@ -28,14 +28,14 @@
             <img src="./img/logo-face.png" class="nav-icon">
         </nav>
     </div>
-    <!-- <div class="slick-slider">-->
+    <!-- <"slick-slider">-->
     <div class="slider">
         <div class="slider-container">
             <div>
                 <p>PRODUCT</p>
                 <h2>ONE</h2>
                 <a href="#" class="btn"> COMPRAR </a>
-                <div class="sprite"> SPRITE</div>
+                <div class="sprite"></div>
             </div>
 
         </div>
@@ -44,16 +44,17 @@
                 <p>PRODUCT</p>
                 <h2>TWO</h2>
                 <a href="#" class="btn"> COMPRAR </a>
+                <div class="sprite"></div>
             </div>
-            <div class="sprite"></div>
         </div>
         <div class="slider-container">
             <div>
                 <p>PRODUCT</p>
                 <h2>THREE</h2>
                 <a href="#" class="btn"> COMPRAR </a>
+                <div class="sprite"></div>
             </div>
-            <div class="sprite"></div>
+        
         </div>
 
     </div>
@@ -157,6 +158,7 @@
         <form class="form" id="saveForm">
             <div class="col-6">
                 <input type="text" id="nombre" class="input" name="nombre" placeholder="NOMBRE">
+                <span class="error" id="nombreError">El Nombre debe tener al menos dos caracteres</span>
             </div>
             <div class="col-6">
                 <input type="text" id="apellido" name="apellido" class="input" placeholder="APELLIDO">
@@ -164,6 +166,7 @@
             </div>
             <div class="col-full">
                 <input type="text" name="mail" id="mail" class="input" placeholder="Mail">
+                <span class="error" id="mailError">El formato del Mail no es correcto</span>
             </div>
             <div class="col-6">
                 <select name="departamento" id="departamento" placeholder="Departamento" class="input" id=""></select>
@@ -173,11 +176,13 @@
             </div>
             <div class="col-6">
                 <input type="text" id="cedula" name="cedula" class="input" placeholder="Cedula">
+                <span class="error" id="cedulaError">Debe agregar una cedula correcta</span>
             </div>
             <div class="col-6">
                 <input class="input" id="terminos" type="checkbox" name="terminos" id="">
             </div>
             <button type="submit" id="save">Guardar</button>
+            
         </form>
     </div>
 
